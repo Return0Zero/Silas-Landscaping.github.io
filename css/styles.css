@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero_section {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: url(images\big-multi-generation-family-having-picnic-lawn-backyard-warm-summer-day-banner.jpg) no-repeat center / cover;
+}

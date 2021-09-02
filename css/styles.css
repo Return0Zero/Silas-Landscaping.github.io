@@ -23,6 +23,7 @@ html {
     margin-left: auto;
     margin-right: auto;  
     margin-top: 100px;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -109,7 +110,7 @@ nav {
     width: 100%;
 }
 
-/**** About Section ****/
+/**** About Section ****/ 
  
 main {
     display: flex;
@@ -118,6 +119,7 @@ main {
     margin-left: 5%;
     margin-right: 5%;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 .logo--decoration-container {
@@ -158,53 +160,161 @@ main {
     font-weight: 500;
 }
 
-/**** Services Section ****/
+/**** Services Section ****/ 
 
 .services {
     width: 100%;
-    margin-top: 10%;
+    margin-bottom: 8%;
     display: grid;
     justify-content: center;
 }
 
 .services--h1 {
-    font-size: 6rem;
+    font-size: 7rem;
+    font-weight: 500;
 }
 
-.services--pictures {
+.services--pictures-container {
     margin-top: 5%;
+    justify-content: center;
 }
 
 .pictures--row-of-3 {
     display: flex;
-    gap: 5rem;
-    margin-top: 5rem;
+    justify-content: center;
+    margin-top: 6rem;
+    gap: 4rem;
 }
 
 .pictures--row-of-2 {
     display: flex;
     justify-content: center;
-    gap: 5rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
+    gap: 4rem;
 }
+
+
+/**** Content Section ****/ 
+
+.content {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 15%;
+}
+
+.content--section-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+.content--section-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20rem;
+}
+
+.content-picture {
+    width: 35%;
+}
+
+.content--info-heading {
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+.content--info-subheading {
+    font-size: 4rem;
+}
+
+.content--info-2 {
+    margin-right: 7%;
+}
+
+/**** Blue Decorations ****/ 
 
 .blue--decoration-1-container {
     width: 100%;
     max-width: 1920px;
     position: absolute;
-    margin-top: 7%;
     z-index: -1;
 }
 
 .blue--decoration-1 {
     width: 100%;
-    
 }
 
-/**** Content Section ****/
+.blue--decoration-2-container {
+    width: 100%;
+    max-width: 1920px;
+    position: absolute;
+    z-index: -3;
+    top: 4100px;
 
-.content {
-    margin-top: 50%;
-    display: grid;
-    justify-content: center;
+}
+
+.blue--decoration-2 {
+    width: 100%;
+}
+
+/**** Contact Information Section ****/
+
+.contact-information {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-information--h1 {
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+.contact-information--content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    font-size: 2rem;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.contact-information--icon {
+    width: 17%;
+    margin-right: 7%;
+}
+
+.map.container {
+    width: 100%;
+
+}
+
+.contact-information--social-media {
+    margin-top: 5%;
+}
+
+.social-media--icon {
+    width: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/**** Footer ****/
+
+footer {
+    margin-top: 2%;
+    background-color: var(--clr-blue-dark);
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    font-size: 1.5rem;
 }

@@ -26,6 +26,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 .container {
     width: 100%;
     height: auto;
@@ -44,14 +46,16 @@ nav {
     top: 0;
     width: 100%;
     max-width: 1920px;
-    min-width: 1200px;
+    min-width: 1200px;  
 }
 
 .logo {
-    padding-right: 20%;
-    
+    width: 400px;
 }
 
+a {
+    color: black;
+}
 
 .nav--links {
     display: flex;
@@ -66,6 +70,25 @@ nav {
 
 .nav--links li {
     list-style: none;
+}
+
+.call-to-action {
+    background-color: var(--clr-green-light);
+    padding: 5px 25px 5px 25px;
+    border-radius: 35px;
+    font-weight: 500;
+    color: white;
+}
+
+.call-to-action:hover {
+    color: var(--clr-green-light);
+    background-color: white;
+    padding: 5px 25px 5px 25px;
+    border-radius: 35px;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--clr-green-light);
 }
 
 /**** Hero Section ****/
@@ -108,6 +131,10 @@ nav {
 .hero--img img {
     height: 100%;
     width: 100%;
+}
+
+.call-to-action--call-now {
+    
 }
 
 /**** About Section ****/ 
@@ -225,6 +252,7 @@ main {
 .content--info-heading {
     font-size: 6rem;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .content--info-subheading {
@@ -235,6 +263,27 @@ main {
     margin-right: 7%;
 }
 
+.call-to-action--2 {
+    background-color: var(--clr-blue-dark);
+    padding: 5px 25px 5px 25px;
+    border-radius: 35px;
+    font-weight: 500;
+    color: white;
+    margin-left: 40%;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.call-to-action--2:hover {
+    color: var(--clr-blue-dark);
+    background-color: white;
+    padding: 5px 25px 5px 25px;
+    border-radius: 35px;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--clr-blue-dark);
+}
 /**** Blue Decorations ****/ 
 
 .blue--decoration-1-container {

@@ -78,6 +78,9 @@ a {
     border-radius: 35px;
     font-weight: 500;
     color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--clr-green-light);
 }
 
 .call-to-action:hover {
@@ -134,7 +137,22 @@ a {
 }
 
 .call-to-action--call-now {
-    
+    color: var(--clr-green-dark);
+    background-color: white;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--clr-green-light);
+    padding: 5px 25px 5px 25px;
+    text-decoration: none;
+}
+
+.call-to-action--call-now:hover {
+    background-color: var(--clr-green-light);
+    color: white;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
 }
 
 /**** About Section ****/ 
@@ -332,7 +350,7 @@ main {
 .icon-container {
     display: flex;
     align-items: center;
-    margin-top: 10%;
+    padding-top: 7%;
 }
 
 .contact-information--icon {

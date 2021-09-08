@@ -74,7 +74,7 @@ a {
 
 .call-to-action {
     background-color: var(--clr-green-light);
-    padding: 5px 25px 5px 25px;
+    padding: 1px 25px 1px 25px;
     border-radius: 35px;
     font-weight: 500;
     color: white;
@@ -86,8 +86,6 @@ a {
 .call-to-action:hover {
     color: var(--clr-green-light);
     background-color: white;
-    padding: 5px 25px 5px 25px;
-    border-radius: 35px;
     font-weight: 500;
     border-style: solid;
     border-width: 3px;
@@ -283,20 +281,21 @@ main {
 
 .call-to-action--2 {
     background-color: var(--clr-blue-dark);
-    padding: 5px 25px 5px 25px;
+    padding: 3px 25px 3px 25px;
     border-radius: 35px;
     font-weight: 500;
     color: white;
     margin-left: 40%;
     font-size: 1.7rem;
     text-decoration: none;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--clr-blue-dark);
 }
 
 .call-to-action--2:hover {
     color: var(--clr-blue-dark);
     background-color: white;
-    padding: 5px 25px 5px 25px;
-    border-radius: 35px;
     font-weight: 500;
     border-style: solid;
     border-width: 3px;

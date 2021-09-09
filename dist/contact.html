@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="contact--html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,46 +8,73 @@
     <link rel="icon" href="images\logo2.png" type="image/icon type">
     <link href="css\styles.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body class="contact--body">
     <header>
-        <nav>
+        <nav class="contact--navbar">
             <a href="index.html"><img class="arrow" src="images\icons\back-arrow.png" alt="logo"></a>
             <a href="index.html"><img class="logo" src="images\Logo-with-text.png" alt="logo"></a>
-            <a href="tel:2402775278"  class="call-to-action">Call Now! (240) 277-5278</a>
+            <a href="tel:2402775278"  class="contact--call-to-action">Call Now! (240) 277-5278</a>
         </nav>
     </header>
+<!-- Blue Decoration 
+    <div class="blue--decoration-3-container">
+        <img src="images\blue-decoration-3.png" alt="blue-decoration" class="blue--decoration-3">
+    </div>-->
+<!-- Main Section -->
     <main>
-        <div>
-            <h1>How can we help you?</h1>
-            <p>Silas Landscaping is a Family-Owned company that provides top quality services in the DMV area! </p>
-            <div class="contact-information--info">
-                <div class="address icon-container">
-                    <img src="images\icons\address.png" alt="address" class="contact-information--icon">
-                    <p>Rockville, MD 20853</p>
-                </div>
-                <div class="phone icon-container">
-                    <img src="images\icons\phone-number.png" alt="phone" class="contact-information--icon">
-                    <a href="tel:2402775278">(240) 277-5278</a>
-                </div>
-                <div class="email icon-container">
-                    <img src="images\icons\email.png" alt="email" class="contact-information--icon">
-                    <a href = "mailto: silaslandscaping@gmail.com">silaslandscaping@gmail.com</a>
-                </div>
-                <div class="time icon-container">
-                    <img src="images\icons\time.png" alt="time" class="contact-information--icon">
-                    <p>Monday to Saturday <br>6:00 AM to 9:00 PM</p>
-                 </div>
-                 <div class="contact-information--social-media">
-                    <h2>Follow Us:</h2>
-                    <a href="https://www.facebook.com/Silaslandscapinginc" target="_blank" rel="noopener noreferrer"><img class="social-media--icon facebook" src="images\icons\facebook.png" alt="facebook-icon"></a>
-                    <a href="https://www.instagram.com/p/COp0fUAB9Na/?igshid=3onubez5n0dk" target="_blank" rel="noopener noreferrer"><img class="social-media--icon instagram" src="images\icons\instagram.png" alt="instagram-icon"></a>
-                    <a href="https://www.yelp.com/biz/silas-landscaping-and-cleaning-services-rockville?uid=x2lBZvVCGqLfAgMGK4albA&utm_source=ashare" target="_blank" rel="noopener noreferrer"><img class="social-media--icon yelp" src="images\icons\yelp.png" alt="yelp-icon"></a>
-                </div>
-            </div>      
+        <div class="contact--main">
+            <div class="contact--main-container">
+                <h1 class="contact--h1">How can we help you?</h1>
+                <p class="contact--p">Silas Landscaping is a Family-Owned company that provides top quality services in the DMV area! </p>
+                <div class="contact--information">
+                    <div class="contact--icon-container">
+                        <img src="images\icons\address.png" alt="address" class="contact-information--icon">
+                        <p>Rockville, MD 20853</p>
+                    </div>
+                    <div class="contact--icon-container">
+                        <img src="images\icons\phone-number.png" alt="phone" class="contact-information--icon">
+                        <a href="tel:2402775278">(240) 277-5278</a>
+                    </div>
+                    <div class="contact--icon-container">
+                        <img src="images\icons\email.png" alt="email" class="contact-information--icon">
+                        <a href = "mailto: silaslandscaping@gmail.com">silaslandscaping@gmail.com</a>
+                    </div>
+                    <div class="contact--icon-container">
+                        <img src="images\icons\time.png" alt="time" class="contact-information--icon">
+                        <p>Monday to Saturday <br>6:00 AM to 9:00 PM</p>
+                     </div>
+                </div>  
+                <div class="contact--social-media">
+                    <h1 class="contact--h1">Follow Us:</h2>
+                    <a href="https://www.facebook.com/Silaslandscapinginc" target="_blank" rel="noopener noreferrer"><img class="contact--social-media-icon facebook" src="images\icons\facebook.png" alt="facebook-icon"></a>
+                    <a href="https://www.instagram.com/p/COp0fUAB9Na/?igshid=3onubez5n0dk" target="_blank" rel="noopener noreferrer"><img class="contact--social-media-icon instagram" src="images\icons\instagram.png" alt="instagram-icon"></a>
+                    <a href="https://www.yelp.com/biz/silas-landscaping-and-cleaning-services-rockville?uid=x2lBZvVCGqLfAgMGK4albA&utm_source=ashare" target="_blank" rel="noopener noreferrer"><img class="contact--social-media-icon yelp" src="images\icons\yelp.png" alt="yelp-icon"></a>
+                </div>    
+            </div>
+            <div class="contact--form">
+                <form class="form">
+                    <h1 class="contact--h1">Contact Us</h1>
+                    <div>
+                        <label class="name-label">What is your name?*</label>
+                        <input class="name" type="text" placeholder="Name" name="name" class="inputArea" required>
+                    </div>
+                    <div>
+                        <label class="name-label">Phone*</label>
+                        <input class="name" type="text" placeholder="Phone" name="phone" class="inputArea" required>
+                    </div>
+                    <div>
+                        <label class="name-label">Email</label>
+                        <input class="name" type="text" placeholder="Email" name="email" class="inputArea">
+                    </div>
+                    <div>
+                        <label class="name-label">Tell us about your project*</label>
+                        <input class="name" type="text" placeholder="Text" name="text" class="inputArea" required>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>
+            
         </div>
-        <form>
-
-        </form>
     </main>
     <footer>
         <p>© Copyright 2021 Silas Landscaping - All Rights Reserved</p>

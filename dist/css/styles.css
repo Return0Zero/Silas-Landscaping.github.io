@@ -40,13 +40,15 @@ nav {
     display: flex;
     height: 100px;
     background-color: white;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     z-index: 9;
     top: 0;
     width: 100%;
     max-width: 1920px;
-    min-width: 1200px;  
+    min-width: 1200px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .logo {
@@ -59,7 +61,7 @@ a {
 
 .nav--links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 30%;
     font-size: 2.5em;
 }
@@ -155,9 +157,9 @@ a {
 
 /**** About Section ****/ 
  
-main {
+.about {
     display: flex;
-    margin-top: 14%;
+    margin-top: 11%;
     font-size: var(--font-size);
     margin-left: 5%;
     margin-right: 5%;
@@ -383,4 +385,99 @@ footer {
     align-items: center;
     padding-left: 3%;
     font-size: 1.5rem;
+}
+
+/**** contact.html ****/
+
+/**** contact navbar ****/
+.contact--navbar {
+    position: fixed;
+    display: flex;
+    height: 100px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+    top: 0;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 1920px;
+    min-width: 1200px;  
+}
+
+.arrow {
+    width: 70px;
+}
+
+.contact--call-to-action {
+    background-color: var(--clr-green-light);
+    padding: 1px 25px 1px 25px;
+    border-radius: 35px;
+    font-weight: 500;
+    color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--clr-green-light);
+    font-size: 1.7rem;
+}
+
+/**** contact Main ****/
+
+.contact--html {
+}
+body {
+    background-image: url(\images\blue-decoration-3.png);
+    background-repeat: no-repeat;
+}
+
+.contact--main {
+    display: flex;
+    justify-content: center;
+}
+
+.contact--main-container{
+    
+}
+
+.contact--h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.contact--p {
+    font-size: 2rem;
+    width: 60%;
+}
+
+.contact--social-media-icon {
+    width: 100px;
+}
+
+.contact--form {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    align-items: center;
+}
+
+.contact-information--icon {
+    width: 80px;
+}
+
+.blue--decoration-3-container {
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    z-index: -1;
+}
+
+.blue--decoration-3 {
+    width: 100%;
+    position: absolute;
+    top: 100;
 }

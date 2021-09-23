@@ -18,12 +18,9 @@
 html {
     font-size: var(--font-size);
     font-family: 'Poppins', sans-serif;
-    max-width: 1920px;
-    min-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;  
-    margin-top: 100px;
+    max-width: 1920px; 
     scroll-behavior: smooth;
+    height: 100px;
 }
 
 
@@ -38,7 +35,6 @@ html {
 nav {
     position: fixed;
     display: flex;
-    height: 5%;
     background-color: white;
     justify-content: space-between;
     align-items: center;
@@ -50,19 +46,39 @@ nav {
     padding-right: 5%;
 }
 
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--clr-green-dark);
+    border-radius: 10px;
+}
+
 .nav--link {
     margin-left: 30px;
 }
 
 .logo {
     width: 250px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 a {
     color: black;
 }
 
-.nav--links {
+.ul--links {
     display: flex;
     font-size: 2.5em;
 }
@@ -96,10 +112,7 @@ a {
 }
 
 /**** Hero Section ****/
-header {
-    background-image: url('dist/images/big-multi-generation-family-having-picnic-lawn-backyard-warm-summer-day-banner.jpg');
-    background-color: var(--clr-green-dark);
-}
+
 
 .hero {
     width: 100%;
@@ -111,10 +124,10 @@ header {
 .hero--info {
     font-size: clamp(20px, 1.3vw, 25px);
     color: white;
-    position: relative;
-    left: 5%;
     top: 50px;
     width: 40%;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 .hero--info-heading {
@@ -123,14 +136,13 @@ header {
 
 .hero--info-subheading {
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .hero--img {
     width: 100%;
     max-width: 1920px;
-    min-width: 1400px;
     position: absolute;
     z-index: -1;    
 }
@@ -149,6 +161,7 @@ header {
     border-color: var(--clr-green-light);
     padding: 5px 25px 5px 25px;
     text-decoration: none;
+    margin-bottom: 1px;
 }
 
 .call-to-action--call-now:hover {
@@ -218,9 +231,15 @@ header {
     justify-content: center;
 }
 
+.services--pictures-container-mobile {
+    display: none;
+}
+
 .services--h1 {
     font-size: 7rem;
     font-weight: 500;
+    
+    text-align: center;
 }
 
 .services--pictures-container {
@@ -251,6 +270,10 @@ header {
     margin-top: 15%;
 }
 
+.call-to-action--2-mobile {
+    display: none;
+}
+
 .content--section-1 {
     width: 100%;
     display: flex;
@@ -275,15 +298,13 @@ header {
     font-size: 6rem;
     font-weight: 500;
     margin-bottom: 20px;
+    
 }
 
 .content--info-subheading {
     font-size: 4rem;
 }
 
-.content--info-2 {
-    margin-right: 7%;
-}
 
 .call-to-action--2 {
     background-color: var(--clr-blue-dark);
@@ -581,11 +602,191 @@ input {
 }
 
 @media (max-width: 575.98px) {
+    nav {
+        
+    }
+    
+    .nav--link {
+        margin-left: 30px;
+    }
+    
+    .logo {
+        width: 150px;
+    }
+    
+    a {
+        color: black;
+    }
+    
+    
+
+    header {
+        background-color: var(--clr-green-dark);
+    }
+
+
     .hero--img {
         display: none;
     }
 
-    nav {
+    
+}
+
+/**** navbar ****/
+
+
+@media (max-width: 1200px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 230px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .nav--links {
+        display: none;
         width: 100%;
     }
+
+    
+
+    .nav--links ul{
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    .nav--links li {
+        text-align: center;
+        padding: .5rem 1rem;
+    }
+    
+    .nav--links.active {
+        display: flex;
+    }
+
+    .content--section-1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content--section-2 {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+
+    .call-to-action--2 {
+        display: none;
+    }
+
+    .call-to-action--2-mobile {
+        display: inline;
+        background-color: var(--clr-blue-dark);
+        padding: 5px 35px 5px 35px;
+        border-radius: 35px;
+        font-weight: 500;
+        color: white;
+        margin-left: 40%;
+        font-size: 1.7rem;
+        text-decoration: none;
+        border-style: solid;
+        border-width: 3px;
+        border-color: var(--clr-blue-dark);
+    }
+    
+    .call-to-action--2-mobile:hover {
+        color: var(--clr-blue-dark);
+        background-color: white;
+        font-weight: 500;
+        border-style: solid;
+        border-width: 3px;
+        border-color: var(--clr-blue-dark);
+    }
+
+    .contact-information {
+        margin-top: 7%;
+    }
+
+    
+    .contact-information--content {
+        flex-direction: column;
+    }
+
+    .contact-information--info {
+        margin-left: 30%;
+        margin-bottom: 5%;
+        flex-direction: inline;
+    }
+
+}
+
+@media (max-width: 950px) {
+    header {
+        background-color: var(--clr-green-dark);
+
+    }
+
+    .hero--img {
+        display: none;
+    }
+
+    .hero--info {
+        font-size: 2.5rem;
+        top: 50px;
+        left: 0;
+        width: 80%;
+        text-align: center;
+    }
+    
+   
+    .hero--info-subheading {
+        margin-bottom: 40px;
+    }
+
+    .call-to-action--call-now:hover {
+        border-color: var(--clr-green-dark);
+    }
+
+    .about {
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .green-decoration {
+        display: none;
+    }
+
+    .mobile--green-decoration {
+        width: 100%;
+        height: 40px;
+        background: var(--clr-green-light);
+    }
+
+    .logo--decoration-container {
+        margin-top: 5%;
+        width: 60%;
+    }
+
+    .services--h1 {
+        font-size: 6rem;
+    }
+
+    .services--pictures-container {
+        display: none;
+    }
+
+    .services--pictures-container-mobile {
+        display: inline;
+    }
+
 }

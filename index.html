@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="navbar.js" defer></script>
     <title>Silas Landscaping</title>
     <link rel="icon" href="images\logo2.png" type="image/icon type">
     <link href="css\styles.css" rel="stylesheet" type="text/css">
@@ -11,13 +12,21 @@
 <body>
     <header>
 <!-- Navigation Bar -->
-        <nav>
+        <nav class="navbar">
             <a href="index.html"><img class="logo" src="images\Logo-with-text.png" alt="logo"></a>
-            <ul class="nav--links">
-                <li class="nav--link"><a href="#about">About</a></li>
-                <li class="nav--link"><a href="#services">Services</a></li>
-                <li class="nav--link"><a href="contact.html"  class="call-to-action">Contact Us</a></li>
-            </ul>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav--links">
+                <ul class="ul--links">
+                    <li class="nav--link"><a href="#about">About</a></li>
+                    <li class="nav--link"><a href="#services">Services</a></li>
+                    <li class="nav--link"><a href="contact.html"  class="call-to-action">Contact Us</a></li>
+                </ul>
+            </div>
+            
         </nav>
 <!-- Hero Section -->
         <div class="hero container">
@@ -26,13 +35,14 @@
                 <p class="hero--info-subheading">A qualified and experienced Family-Owned lawn care & cleaning company with more than <b>15 years</b> of experience in the DMV area.</p>
                 <a href="tel:2402775278" class="call-to-action--call-now">Call Now! (240) 277-5278</a>
             </div>
-            <!-- <div class="hero--img">
+            <div class="hero--img">
                 <img src="images\big-multi-generation-family-having-picnic-lawn-backyard-warm-summer-day-banner.jpg" alt="">
-            </div> -->
+            </div>
         </div>
     </header>
 <!-- About Section -->    
     <main class="about" id="about">
+        <div class="mobile--green-decoration"></div>
         <div class="logo--decoration-container">
             <img class="logo-decorated" src="images\logo-decoration.png" alt="logo-decorated">
         </div>
@@ -51,8 +61,9 @@
             <div class="about--info-subheading">
                 <h2> Lawn you can be proud of from a company you can depend on!</h2>
             </div>
-            <div class="green-decoration second-bar"></div>
+            <div class="green-decoration"></div>
         </div>
+        <div class="mobile--green-decoration"></div>
     </main>
 <!-- First Blue Decoration -->
     <div class="blue--decoration-1-container">
@@ -82,6 +93,28 @@
                 <img src="images\services\lawn-care-packages@2x.png" alt="lawn-care-packages" class="services--pictures">
             </div>
         </div>
+        <div class="services--pictures-container-mobile">
+            <div class="pictures--row-of-2">
+                <img src="images\services\landscape-maintenance@2x.png" alt="landscape-maintenance" class="services--pictures">
+                <img src="images\services\deck-restorations@2x.png" alt="deck-restorations" class="services--pictures">
+            </div>
+            <div class="pictures--row-of-2">
+                <img src="images\services\leaf-removal@2x.png" alt="leaf-removal" class="services--pictures">
+                <img src="images\services\mowing@2x.png" alt="mowing" class="services--pictures">
+            </div>
+            <div class="pictures--row-of-3">
+                <img src="images\services\pruning@2x.png" alt="pruning">
+                <img src="images\services\shrub-trimming@2x.png" alt="shrub-trimming" class="services--pictures">
+            </div>
+            <div class="pictures--row-of-2">
+                <img src="images\services\snow-removal@2x.png" alt="snow-removal" class="services--pictures">
+                <img src="images\services\lawn-care-packages@2x.png" alt="lawn-care-packages" class="services--pictures">
+            </div>
+            <div class="pictures--row-of-2">
+                <img src="images\services\gutter-cleaning@2x.png" alt="gutter-cleaning" class="services--pictures">
+                <img src="images\services\mulching@2x.png" alt="mulching" class="services--pictures">
+            </div>
+        </div>
     </section>
 
 <!-- Content Section -->      
@@ -101,7 +134,9 @@
                 <p class="content--info-heading">cover every season.</p>
                 <a href="contact.html"  class="call-to-action--2">Contact Us</a>
             </div>
+
         </div>
+        <a href="contact.html"  class="call-to-action--2-mobile">Contact Us</a>
     </section> 
 <!-- Second Blue Decoration -->
     <div class="blue--decoration-2-container">

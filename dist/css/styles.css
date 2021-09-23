@@ -38,7 +38,7 @@ html {
 nav {
     position: fixed;
     display: flex;
-    height: 100px;
+    height: 5%;
     background-color: white;
     justify-content: space-between;
     align-items: center;
@@ -46,13 +46,16 @@ nav {
     top: 0;
     width: 100%;
     max-width: 1920px;
-    min-width: 1200px;
     padding-left: 5%;
     padding-right: 5%;
 }
 
+.nav--link {
+    margin-left: 30px;
+}
+
 .logo {
-    width: 400px;
+    width: 250px;
 }
 
 a {
@@ -61,8 +64,6 @@ a {
 
 .nav--links {
     display: flex;
-    justify-content: space-between;
-    width: 30%;
     font-size: 2.5em;
 }
 
@@ -95,10 +96,13 @@ a {
 }
 
 /**** Hero Section ****/
+header {
+    background-image: url('dist/images/big-multi-generation-family-having-picnic-lawn-backyard-warm-summer-day-banner.jpg');
+    background-color: var(--clr-green-dark);
+}
 
 .hero {
     width: 100%;
-    min-width: 1000px;
     display: flex;
     flex-direction: column;
     margin-top: 6%;
@@ -393,7 +397,7 @@ footer {
 .contact--navbar {
     position: fixed;
     display: flex;
-    height: 100px;
+    height: 5%;
     background-color: white;
     justify-content: space-between;
     align-items: center;
@@ -407,7 +411,7 @@ footer {
 }
 
 .arrow {
-    width: 70px;
+    width: 50px;
 }
 
 .contact--call-to-action {
@@ -439,14 +443,11 @@ footer {
     max-width: 1920px;
 }
 
-
-
-
-
-
 .contact--main {
     display: flex;
     margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
 }
 
 .contact--main-container{ 
@@ -463,8 +464,37 @@ footer {
     width: 80%;
 }
 
+.contact--social-media {
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contact--social-media-icon-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
 .contact--social-media-icon {
-    width: 100px;
+    width: 120px;
+    margin-top: 30%;
+}
+
+.contact--icon-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.9rem;
+    margin-top: 7%;
+}
+
+.contact-information--icon {
+    width: 80px;
+}
+
+.contact--information {
+    margin-top: 20px;
 }
 
 .contact--form {
@@ -472,12 +502,11 @@ footer {
     position: relative;
     align-items: center;
     width: 100%;
-
     margin-left: 5%;
 }
 
 .form {
-    width: 600px;
+    width: 100%;
     align-items: center;
     background-image: linear-gradient(135deg, rgba(140,195,60,.4), rgba(140,195,60,.6));
     border-color: #FFFFFF;
@@ -487,7 +516,6 @@ footer {
     text-align: center;
     padding: 5%;
     font-size: 1.7rem;
-    
 }
 
 input,
@@ -526,19 +554,38 @@ input {
     margin-top: 5%;
 }
 
-.contact-information--icon {
-    width: 80px;
-}
-
 .blue--decoration-3-container {
     width: 100%;
     max-width: 1920px;
-    position: relative;
+    position: fixed;
+    bottom: 0;
     z-index: -1;
 }
 
 .blue--decoration-3 {
     width: 100%;
-    position: absolute;
     top: 100;
+}
+
+.contact--footer {
+    margin-top: 2%;
+    background-color: var(--clr-blue-dark);
+    color: white;
+    height: 50px;
+    position: fixed;
+    padding-left: 3%;
+    font-size: 1.5rem;
+    width: 100%;
+    bottom: 0;
+    max-width: 1920px;
+}
+
+@media (max-width: 575.98px) {
+    .hero--img {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
 }

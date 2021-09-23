@@ -21,6 +21,7 @@ html {
     max-width: 1920px; 
     scroll-behavior: smooth;
     height: 100px;
+    margin: auto;
 }
 
 
@@ -35,7 +36,7 @@ html {
 nav {
     position: fixed;
     display: flex;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.99);
     justify-content: space-between;
     align-items: center;
     z-index: 9;
@@ -389,6 +390,10 @@ a {
 
 }
 
+.contact--h1 {
+    margin-bottom: 2%;
+}
+
 .contact-information--social-media {
     margin-top: 5%;
 }
@@ -428,7 +433,6 @@ footer {
     padding-left: 5%;
     padding-right: 5%;
     max-width: 1920px;
-    min-width: 1200px;  
 }
 
 .arrow {
@@ -460,7 +464,7 @@ footer {
 /**** contact Main ****/
 
 .contact--html {
-    
+    margin-top: 5%;
     max-width: 1920px;
 }
 
@@ -602,10 +606,7 @@ input {
 }
 
 @media (max-width: 575.98px) {
-    nav {
         
-    }
-    
     .nav--link {
         margin-left: 30px;
     }
@@ -684,7 +685,7 @@ input {
         margin-bottom: 10%;
     }
 
-
+    
     .call-to-action--2 {
         display: none;
     }
@@ -748,7 +749,10 @@ input {
         text-align: center;
     }
     
-   
+    .call-to-action--call-now {
+        border-radius: 50px;
+    }
+
     .hero--info-subheading {
         margin-bottom: 40px;
     }

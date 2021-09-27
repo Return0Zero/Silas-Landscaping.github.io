@@ -246,6 +246,7 @@ a {
 .services--pictures-container {
     margin-top: 5%;
     justify-content: center;
+    width: 100%;
 }
 
 .pictures--row-of-3 {
@@ -605,35 +606,6 @@ input {
     max-width: 1920px;
 }
 
-@media (max-width: 575.98px) {
-        
-    .nav--link {
-        margin-left: 30px;
-    }
-    
-    .logo {
-        width: 150px;
-    }
-    
-    a {
-        color: black;
-    }
-    
-    
-
-    header {
-        background-color: var(--clr-green-dark);
-    }
-
-
-    .hero--img {
-        display: none;
-    }
-
-    
-}
-
-/**** navbar ****/
 
 
 @media (max-width: 1200px) {
@@ -657,7 +629,16 @@ input {
         width: 100%;
     }
 
-    
+    .services--h1, .contact-information--h1 {
+        font-size: 5rem;
+    }
+    .content--info-subheading, .content--info-heading {
+        font-size: 4rem;
+    }
+
+    .services--pictures {
+        width: 250px;
+    }
 
     .nav--links ul{
         width: 100%;
@@ -793,4 +774,32 @@ input {
         display: inline;
     }
 
+}
+
+@media (max-width: 575.98px) {
+        
+    .nav--link {
+        margin-left: 30px;
+    }
+    
+    .logo {
+        width: 150px;
+    }
+    
+    a {
+        color: black;
+    }
+    
+    
+
+    header {
+        background-color: var(--clr-green-dark);
+    }
+
+
+    .hero--img {
+        display: none;
+    }
+
+    
 }

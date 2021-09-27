@@ -609,6 +609,8 @@ input {
 
 
 @media (max-width: 1200px) {
+   
+
     .toggle-button {
         display: flex;
     }
@@ -710,6 +712,7 @@ input {
         flex-direction: inline;
     }
 
+    
 }
 
 @media (max-width: 950px) {
@@ -774,6 +777,10 @@ input {
         display: inline;
     }
 
+    .map {
+        width: 400px;
+    }
+
 }
 
 @media (max-width: 575.98px) {
@@ -801,5 +808,7 @@ input {
         display: none;
     }
 
-    
+    .map {
+        width: 250px;
+    }
 }

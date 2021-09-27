@@ -228,7 +228,7 @@ a {
 .services {
     width: 100%;
     margin-bottom: 8%;
-    display: grid;
+    display: inline;
     justify-content: center;
 }
 
@@ -408,6 +408,7 @@ a {
 /**** Footer ****/
 
 footer {
+    width: 100%;
     margin-top: 2%;
     background-color: var(--clr-blue-dark);
     color: white;
@@ -777,6 +778,23 @@ input {
         display: inline;
     }
 
+    .icon-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-information--content {
+        display: inline;
+    }
+
+    .contact-information--info {
+        margin-left: 0;
+    }
+
+    .contact-information--icon {
+        width: 50px;
+    }
+
     .map {
         width: 400px;
     }
@@ -797,7 +815,13 @@ input {
         color: black;
     }
     
-    
+    .services--h1, .contact-information--h1 {
+        font-size: 4rem;
+    }
+
+    .services--pictures {
+        width: 150px;
+    }
 
     header {
         background-color: var(--clr-green-dark);

@@ -123,7 +123,7 @@ a {
 }
 
 .hero--info {
-    font-size: clamp(20px, 1.3vw, 25px);
+    font-size: 2.5rem;
     color: white;
     top: 50px;
     width: 40%;
@@ -400,7 +400,7 @@ a {
 }
 
 .social-media--icon {
-    width: 4%;
+    width: 5%;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -614,6 +614,7 @@ input {
 
     .toggle-button {
         display: flex;
+        top: 2.5rem;
     }
 
     .navbar {
@@ -630,6 +631,11 @@ input {
     .nav--links {
         display: none;
         width: 100%;
+    }
+
+    .hero--info {
+        font-size: 2rem;
+        
     }
 
     .services--h1, .contact-information--h1 {
@@ -803,10 +809,67 @@ input {
         font-size: 1.2rem;
     }
 
+    .content-picture {
+        width: 45%;
+    }
+
+    .social-media--icon {
+        width: 8%;
+    }
+
 }
 
+@media (max-width: 700px) {
+    .blue--decoration-2-container {
+        top: 3100px;
+    
+    }
+
+    
+
+    .hero--info {
+        font-size: 2rem;
+    }
+
+    .call-to-action--call-now {
+        font-size: 1.7rem;
+    }
+
+    .about--info-heading {
+        font-size: 4rem;
+    }
+    
+    .about--info-paragraph {
+        font-size: 2rem;
+    }
+    
+    .about--info-subheading {
+        font-size: 2rem;
+    }
+
+    .services--h1 {
+        font-size: 4rem;
+    }
+
+    .content--info-heading {
+        font-size: 4rem;
+    }
+    
+    .content--info-subheading {
+        font-size: 3.5rem;
+    }
+
+    .contact-information--h1 {
+        font-size: 4rem;
+    }
+    
+    .contact-information--content {
+        font-size: 2rem;
+    }
+}
+
+
 @media (max-width: 575.98px) {
-        
     .nav--link {
         margin-left: 30px;
     }
@@ -815,14 +878,15 @@ input {
         width: 150px;
     }
     
+    .toggle-button {
+        top: 1.5rem;
+        right: 2rem;
+    }
+
     a {
         color: black;
     }
     
-    .services--h1, .contact-information--h1 {
-        font-size: 4rem;
-    }
-
     .services--pictures {
         width: 150px;
     }
@@ -838,5 +902,9 @@ input {
 
     .map {
         width: 250px;
+    }
+
+    .social-media--icon {
+        width: 12%;
     }
 }

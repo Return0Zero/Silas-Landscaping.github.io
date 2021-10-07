@@ -810,7 +810,7 @@ input {
     }
 
     .content-picture {
-        width: 45%;
+        width: 50%;
     }
 
     .social-media--icon {
@@ -824,8 +824,6 @@ input {
         top: 3100px;
     
     }
-
-    
 
     .hero--info {
         font-size: 2rem;
@@ -865,6 +863,11 @@ input {
     
     .contact-information--content {
         font-size: 2rem;
+    }
+
+    .call-to-action--2 {
+        margin-left: 30%;
+        font-size: 1.5rem;
     }
 }
 

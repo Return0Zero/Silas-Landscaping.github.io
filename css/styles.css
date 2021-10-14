@@ -427,7 +427,7 @@ footer {
 .contact--navbar {
     position: fixed;
     display: flex;
-    height: 5%;
+    height: 8%;
     background-color: white;
     justify-content: space-between;
     align-items: center;

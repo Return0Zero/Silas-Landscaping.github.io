@@ -120,7 +120,6 @@ a {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 6%;
 }
 
 .hero--info {
@@ -653,6 +652,7 @@ input {
 
     .hero {
         padding-left: 9%;
+        margin-top: 6%;
     }
 
     .services--h1, .contact-information--h1 {

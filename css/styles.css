@@ -415,10 +415,12 @@ footer {
     height: 50px;
     display: flex;
     align-items: center;
-    padding-left: 3%;
     font-size: 1.5rem;
 }
 
+.main--footer {
+    padding-left: 3%;
+}
 /**** contact.html ****/
 
 /**** contact navbar ****/
@@ -584,14 +586,13 @@ input {
 .blue--decoration-3-container {
     width: 100%;
     max-width: 1920px;
-    position: fixed;
-    bottom: 0;
-    z-index: -1;
+    position: absolute;
+    z-index: -9;
+    bottom: 50%;
 }
 
 .blue--decoration-3 {
     width: 100%;
-    top: 100;
 }
 
 .contact--footer {
@@ -599,12 +600,14 @@ input {
     background-color: var(--clr-blue-dark);
     color: white;
     height: 50px;
-    position: fixed;
-    padding-left: 3%;
+    position: absolute;
     font-size: 1.5rem;
     width: 100%;
-    bottom: 0;
     max-width: 1920px;
+}
+
+.footer--p {
+    margin-left: 3%;
 }
 
 

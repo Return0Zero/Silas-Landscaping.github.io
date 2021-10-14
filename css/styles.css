@@ -22,6 +22,7 @@ html {
     scroll-behavior: smooth;
     height: 100px;
     margin: auto;
+    margin-top: 5%;
 }
 
 
@@ -712,6 +713,9 @@ input {
     }
 
     
+
+
+
     .contact-information--content {
         flex-direction: column;
     }
@@ -722,7 +726,34 @@ input {
         flex-direction: inline;
     }
 
+    .contact--main {
+        display: inline;
+    }
+
+    .contact--main-container {
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+
+    .contact--form {
+        margin-left: 10%;
+        margin-right: 5%;
+        margin-top: 10%;
+        width: 80%;
+    }
+
+    .contact--logo {
+        display: none;
+    }
     
+    .arrow {
+        width: 40px;
+    }
+
+    .contact--social-media-icon {
+        width: 50px;
+    }
 }
 
 @media (max-width: 950px) {

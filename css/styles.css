@@ -618,12 +618,15 @@ input {
 
 
 @media (max-width: 1200px) {
-   
+    nav {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
 
     .toggle-button {
         display: flex;
         top: 2.5rem;
-        right: 6rem;
+        right: 3rem;
     }
 
     .navbar {
@@ -635,6 +638,7 @@ input {
         width: 230px;
         margin-top: 5%;
         margin-bottom: 5%;
+        margin-left: 5%;
     }
 
     .nav--links {
@@ -648,7 +652,7 @@ input {
     }
 
     .hero {
-        margin-left: 5%;
+        padding-left: 5%;
     }
 
     .services--h1, .contact-information--h1 {

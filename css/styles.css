@@ -611,6 +611,10 @@ input {
     margin-left: 3%;
 }
 
+.inputarea--text {
+    height: 50px;
+}
+
 
 
 @media (max-width: 1200px) {
@@ -640,6 +644,10 @@ input {
     .hero--info {
         font-size: 2rem;
         
+    }
+
+    .hero {
+        margin-left: 5%;
     }
 
     .services--h1, .contact-information--h1 {

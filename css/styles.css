@@ -865,6 +865,10 @@ input {
         width: 8%;
     }
 
+    .contact--html {
+        margin-top: 8%;
+    }
+
 }
 
 @media (max-width: 700px) {

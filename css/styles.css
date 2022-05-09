@@ -617,6 +617,50 @@ input {
 }
 
 
+/*** Thank you Page  ****/
+
+.thanks--main {
+    width: 80%;
+    height: 400px;
+    text-align: center;
+    background-image: linear-gradient(135deg, rgba(140,195,60,.4), rgba(140,195,60,.6));
+    border-color: #FFFFFF;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    padding: 5%;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.thanks--logo {
+    margin-top: 5%;
+    width: 40%;
+    background-color: #FFFFFF;
+    padding: 5px 15px 5px 15px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.thanks--footer {
+    margin-top: 2%;
+    background-color: var(--clr-blue-dark);
+    color: white;
+    height: 50px;
+    position: absolute;
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 1920px;
+    bottom: 0;
+}
+
+
+/*** media   ****/
+
 
 @media (max-width: 1200px) {
     nav {
@@ -869,6 +913,16 @@ input {
         margin-top: 8%;
     }
 
+    .thanks--main {
+        font-size: 1.6rem;
+        
+    }
+    
+    .thanks--logo {
+        margin-top: 10%;
+        width: 45%;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -924,6 +978,17 @@ input {
     .call-to-action--2-mobile {
         margin-left: 30%;
         font-size: 1.5rem;
+    }
+
+    
+    .thanks--main {
+        font-size: 1.5rem;
+        
+    }
+    
+    .thanks--logo {
+        margin-top: 10%;
+        width: 55%;
     }
 
 }
@@ -1016,10 +1081,27 @@ input {
         margin-left: 30%;
         font-size: 1.5rem;
     }
+
+    
+    .thanks--main {
+        padding-top: 10%;
+        font-size: 1.4rem;
+        
+    }
+    
+    .thanks--logo {
+        margin-top: 30%;
+        width: 65%;
+    }
 }
 
 @media (max-width: 400px) {
     .services--pictures {
         width: 120px;
+    }
+
+    .thanks--logo {
+        margin-top: 30%;
+        width: 85%;
     }
 }
